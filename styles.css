@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Aligning and Styling the .line Containers */
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Styling the .point divs for better readability */
+.point {
+    flex: 1; /* Equal width */
+    margin: 0 10px; /* Reduced margin for better spacing */
+    text-align: center;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%; /* Full width of parent */
+    height: 80px; /* Larger height for better space */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+#text8 {
+    background-color: rgb(255, 230, 0); /* This will make the background of the textarea with ID 'text12' red */
+}
+
+#text11 {
+    background-color: rgb(255, 230, 0); /* This will make the background of the textarea with ID 'text12' red */
+}
+
+#text12 {
+    background-color: red; /* This will make the background of the textarea with ID 'text12' red */
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 200px; /* Fixed width */
+    padding: 10px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C85FF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e64ff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .line {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .point {
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
